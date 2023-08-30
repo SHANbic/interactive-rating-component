@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="flip-container">
+      <div class="front">
+        <img class="star-icon" src="./images/icon-star.svg" alt="star icon" />
+        <p class="title">How did we do?</p>
+        <p class="content">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings">
+          <button class="rating-btn" value="1">1</button>
+          <button class="rating-btn" value="2">2</button>
+          <button class="rating-btn" value="3">3</button>
+          <button class="rating-btn" value="4">4</button>
+          <button class="rating-btn" value="5">5</button>
+        </div>
 
-  <!-- Rating state start -->
+        <button class="submit-btn">Submit</button>
+      </div>
+      <div class="back">
+        <img
+          class="illustration-thank-you"
+          src="./images/illustration-thank-you.svg"
+          alt="illustration-thank-you"
+        />
+        <p class="rating">
+          You selected&nbsp;
+          <span id="user-rating"></span>
+          &nbsp;out of 5
+        </p>
+        <p class="thank">Thank you!</p>
+        <p class="appreciate">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/SHANbic/interactive-rating-component"
+        >Pierre Lambert</a
+      >.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
